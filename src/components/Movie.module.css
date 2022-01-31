@@ -1,0 +1,49 @@
+.movie {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #230052;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  
+}
+.movie button:nth-of-type(1){
+  margin: .5rem 0 0 0;
+  color: rgb(170, 143, 143);
+}
+.movie button:nth-of-type(2){
+  margin: .5rem 0 0 0;
+  color: rgb(138, 185, 167);
+}
+.animation{
+  animation-name: disapear;
+  animation-duration: 1s;
+
+}
+@keyframes disapear{
+  from{
+    display:block;
+    opacity: 1;
+    height: 100%;
+    
+    z-index: 1;
+  }
+  to{
+    display:none;
+    opacity: 0;
+    height: 1%;
+    z-index: 0;
+  }
+}
+
+.movie h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.movie h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 1rem;
+}
